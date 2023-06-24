@@ -1,9 +1,9 @@
-version: 2
-updates:
+#version: 4
+#updates:
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: "github-actions"
-    directory: "/"
-    schedule:
-      interval: "daily"
-    commit-message:
-      prefix: "workflows: "
+  # - package-ecosystem: "github-actions"
+  # directory: "/"
+  # schedule:
+  #   interval: "daily"
+  # commit-message:
+  #   prefix: "workflows: " 
