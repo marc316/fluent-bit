@@ -67,7 +67,7 @@ jobs:
       ARM_SUBSCRIPTION_ID: ${{ secrets.azure-subscription-id }}
       ARM_TENANT_ID: ${{ secrets.azure-tenant-id }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
           repository: fluent/fluent-bit-ci
@@ -211,7 +211,7 @@ jobs:
       - name: Test image exists and cache locally
         run: docker pull ${{ inputs.image_name }}:${{ inputs.image_tag }}
 
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
           repository: fluent/fluent-bit-ci
@@ -271,7 +271,7 @@ jobs:
     env:
       USE_GKE_GCLOUD_AUTH_PLUGIN: true
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           ref: ${{ inputs.ref }}
           repository: fluent/fluent-bit-ci
