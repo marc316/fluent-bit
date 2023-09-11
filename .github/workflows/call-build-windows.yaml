@@ -112,7 +112,7 @@ jobs:
 
       - name: Get dependencies w/ chocolatey
         if: ${{ matrix.config.arch != 'amd64_arm64' }}
-        uses: crazy-max/ghaction-chocolatey@v2
+        uses: crazy-max/ghaction-chocolatey@v3
         with:
           args: install ${{ matrix.config.chocolatey_opt }} openssl -y
 
